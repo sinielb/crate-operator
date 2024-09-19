@@ -63,7 +63,7 @@ setup(
             "sphinx>=5,<7",
             "sphinx-autodoc-typehints",
             # Pinning this as 0.18 does not work
-            "docutils==0.17.1",
+            "docutils==0.21.2",
             "Jinja2<3.1",
             "alabaster==0.7.13",
         ],
