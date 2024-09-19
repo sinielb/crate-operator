@@ -76,7 +76,7 @@ setup(
             "filelock==3.16.0",  # used for locks when running in parallel mode
         ],
         "develop": [
-            "black==22.3.0",
+            "black==24.8.0",
             "flake8==3.8.4",
             "isort==5.12.0",
             "mypy==0.770",
