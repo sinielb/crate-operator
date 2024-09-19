@@ -60,7 +60,7 @@ setup(
     ],
     extras_require={
         "docs": [
-            "sphinx>=5,<7",
+            "sphinx>=5,<9",
             "sphinx-autodoc-typehints",
             # Pinning this as 0.18 does not work
             "docutils==0.17.1",
