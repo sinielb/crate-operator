@@ -26,8 +26,8 @@ partOf: cratedb
 
 env:
   CRATEDB_OPERATOR_BOOTSTRAP_TIMEOUT: "1800"
-  CRATEDB_OPERATOR_DEBUG_VOLUME_SIZE: "128GiB"
-  CRATEDB_OPERATOR_DEBUG_VOLUME_STORAGE_CLASS: "default"
+  CRATEDB_OPERATOR_DEBUG_VOLUME_SIZE: "5GiB"
+  CRATEDB_OPERATOR_DEBUG_VOLUME_STORAGE_CLASS: "db-storage-retain"
   CRATEDB_OPERATOR_JMX_EXPORTER_VERSION: "1.2.0"
   CRATEDB_OPERATOR_LOG_LEVEL: "INFO"
   CRATEDB_OPERATOR_ROLLING_RESTART_TIMEOUT: "3600"
@@ -52,11 +52,11 @@ podAnnotations: {}
 
 resources:
   limits:
-    cpu: 250m
-    memory: 128Mi
+    cpu: 500m
+    memory: 256Mi
   requests:
     cpu: 250m
-    memory: 128Mi
+    memory: 256Mi
 
 nodeSelector: {}
 
