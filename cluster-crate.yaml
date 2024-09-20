@@ -1,0 +1,26 @@
+apiVersion: cloud.crate.io/v1
+kind: CrateDB
+metadata:
+  name: crate-cluster
+  namespace: st-sql-crate-db
+spec:
+  cluster:
+    imageRegistry: crate
+    name: crate-dev
+    version: 5.7.3
+  nodes:
+    data:
+    - name: crate-cluster
+      replicas: 3
+      resources:
+        request:
+          cpu: 12
+          memory: 24Gi
+        limits:
+          cpu: 14
+          memory: 30Gi
+        disk:
+          count: 1
+          size: 200GiB
+          storageClass: db-storage-retain
+        heapRatio: 0.25
