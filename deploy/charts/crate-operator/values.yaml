@@ -67,7 +67,7 @@ affinity:
     requiredDuringSchedulingIgnoredDuringExecution:
       nodeSelectorTerms:
         - matchExpressions:
-            - key: role
+            - key: node-role.kubernetes.io/storage-crate
               operator: In
               values:
-                - database
+                - storage-crate
