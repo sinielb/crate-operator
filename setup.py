@@ -68,7 +68,7 @@ setup(
             "alabaster==0.7.13",
         ],
         "testing": [
-            "faker==18.3.1",
+            "faker==30.3.0",
             "pytest==8.3.2",
             "pytest-aiohttp==1.0.5",
             "pytest-asyncio==0.24.0",
